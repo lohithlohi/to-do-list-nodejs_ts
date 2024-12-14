@@ -12,7 +12,7 @@
   {
     "id": 4,
     "task": "jump on wall",
-    "completed": false
+    "completed": true
   },
   {
     "id": 6,
@@ -22,6 +22,11 @@
   {
     "id": 7,
     "task": "slepp fast",
+    "completed": false
+  },
+  {
+    "id": 8,
+    "task": "collage visit",
     "completed": false
   }
 ]
