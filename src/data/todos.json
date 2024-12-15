@@ -6,7 +6,7 @@
   },
   {
     "id": 3,
-    "task": "go to home",
+    "task": "jump on wall",
     "completed": false
   },
   {
@@ -28,5 +28,15 @@
     "id": 8,
     "task": "collage visit",
     "completed": false
+  },
+  {
+    "id": 10,
+    "task": "industry visit",
+    "completed": true
+  },
+  {
+    "id": 11,
+    "task": "industry visit",
+    "completed": true
   }
 ]

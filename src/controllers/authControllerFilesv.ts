@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { UserModel } from '../models/userModelFilesv';
 
-const JWT_SECRET = 'your_secret_key'; // Replace with a secure secret in production
+const JWT_SECRET = 'My_secret_key'; // Replace with a secure secret in production
 
 export const registerUser = async (req: Request, res: Response): Promise<void> => {
     const { username, password } = req.body;

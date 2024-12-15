@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { UserModel } from '../models/userModelFilesv';
 
-const JWT_SECRET = 'your_secret_key'; // Replace with a secure secret in production
+const JWT_SECRET = 'My_secret_key'; // Replace with a secure secret in production
 
 export const authenticate = (req: Request, res: Response, next: NextFunction): void => {
     const token = req.headers.authorization?.split(' ')[1];

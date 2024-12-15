@@ -2,18 +2,15 @@
 import { Request, Response } from 'express';
 import { Todo } from '../models/todoModel';
 import { validateTodo } from '../validators/todoValidator';
+import { AppError } from '../utils/errorHandler';
 
 // Get all todos
 export const getTodos = async (req: Request, res: Response): Promise<void> => {
     try {
         const todos = await Todo.find();
         res.status(200).json(todos);
-    } catch (error: unknown) {
-        if (error instanceof Error) {
-            res.status(400).json({ message: error.message });
-        } else {
-            res.status(400).json({ message: 'An unknown error occurred' });
-        }
+    } catch (error) {
+        res.status(400).json({ message: error instanceof Error ? error.message : 'An unknown error occured' });
     }
 };
 
@@ -62,11 +59,12 @@ export const deleteTodo = async (req: Request, res: Response): Promise<void> => 
         }
 
         res.status(200).json({ message: 'Todo deleted successfully' });
-    } catch (error: unknown) {
-        if (error instanceof Error) {
-            res.status(400).json({ message: error.message });
-        } else {
-            res.status(400).json({ message: 'An unknown error occurred' });
-        }
+    } catch (error) {
+        res.status(400).json({ message: error instanceof Error ? error.message : 'An unknown error occured' });
     }
 };
+
+export const ForceError = async () => {
+    throw new AppError('This is a simulated error', 400);
+};
+

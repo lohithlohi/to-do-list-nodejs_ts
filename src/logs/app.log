@@ -1,0 +1,62 @@
+{
+  message: 'This is a simulated error',
+  stack: 'Error: This is a simulated error\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:110:9\n' +
+    '    at Layer.handle [as handle_request] (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at Route.dispatch (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\route.js:119:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at Function.handle (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\index.js:175:3)\n' +
+    '    at router (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\express\\lib\\router\\index.js:47:12)',
+  statusCode: 400,
+  url: '/api/todos/error',
+  level: 'error',
+  timestamp: '2024-12-15T09:46:15.287Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/error',
+  level: 'error',
+  timestamp: '2024-12-15T11:34:17.480Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/5',
+  level: 'error',
+  timestamp: '2024-12-15T11:35:26.419Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/5',
+  level: 'error',
+  timestamp: '2024-12-15T11:37:08.538Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:92:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/9',
+  level: 'error',
+  timestamp: '2024-12-15T11:37:46.333Z'
+}
