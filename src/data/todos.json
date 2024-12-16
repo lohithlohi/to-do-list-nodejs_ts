@@ -38,5 +38,15 @@
     "id": 11,
     "task": "industry visit",
     "completed": true
+  },
+  {
+    "id": 12,
+    "task": "common guys",
+    "completed": false
+  },
+  {
+    "id": 14,
+    "task": "a new work",
+    "completed": false
   }
 ]

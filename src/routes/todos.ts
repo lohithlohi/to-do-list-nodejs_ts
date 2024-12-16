@@ -129,4 +129,36 @@ router.get("/error", () => {
   throw new AppError("This is a simulated error", 400);
 });
 
+router.patch('/:id/status', async (req: Request, res: Response, next : NextFunction) => {
+  try {
+    const { id } = req.params; // Extract the task ID from the route parameter
+    const { completed } = req.body; // Extract the new status from the request body
+
+    // Validate the request data
+    if (typeof completed !== 'boolean') {
+      throw new AppError("Invalid completed status. Must be true or false.", 400);
+    }
+
+    // Read the file storage
+    const todos = await readTodos();
+    const todoIndex = todos.findIndex((todo: Todo) => todo.id === parseInt(id));
+
+    if (todoIndex === -1) {
+      throw new AppError("Todo not found", 404);
+    }
+
+    // Update the task's completed status
+    todos[todoIndex].completed = completed;
+
+    // Write the updated data back to the file
+    await writeTodos(todos);
+
+    // Send the updated task as a response
+    res.json(todos[todoIndex]);
+  } catch (err) {
+    next(err); // Pass the error to the centralized error handler
+  }
+});
+
+
 export default router;
