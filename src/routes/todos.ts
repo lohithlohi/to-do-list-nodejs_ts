@@ -28,8 +28,7 @@ router.get("/", authenticate, async (req: Request, res: Response, next: NextFunc
 
 // Get todo by Id
 router.get(
-  "/:id",
-  async (req: Request<{ id: string }>, res: Response, next: NextFunction) => {
+  "/:id", authenticate, async (req: Request<{ id: string }>, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
       const todos = await readTodos();
