@@ -7,11 +7,6 @@
   {
     "id": 3,
     "task": "jump on wall",
-    "completed": false
-  },
-  {
-    "id": 4,
-    "task": "jump on wall",
     "completed": true
   },
   {
@@ -25,28 +20,18 @@
     "completed": false
   },
   {
-    "id": 8,
-    "task": "collage visit",
-    "completed": false
-  },
-  {
     "id": 10,
     "task": "industry visit",
     "completed": true
   },
   {
-    "id": 11,
-    "task": "industry visit",
-    "completed": true
-  },
-  {
-    "id": 12,
-    "task": "common guys",
+    "id": 14,
+    "task": "a new work",
     "completed": false
   },
   {
-    "id": 14,
-    "task": "a new work",
+    "id": 15,
+    "task": "get me phone",
     "completed": false
   }
 ]

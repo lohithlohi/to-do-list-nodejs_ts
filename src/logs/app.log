@@ -71,3 +71,65 @@
   level: 'error',
   timestamp: '2024-12-16T05:45:05.527Z'
 }
+{
+  message: `Unexpected token 'd', ..."mpleted": dsjbfjshb\r"... is not valid JSON`,
+  stack: `SyntaxError: Unexpected token 'd', ..."mpleted": dsjbfjshb\r"... is not valid JSON\n` +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n' +
+    '    at invokeCallback (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:520:28)\n' +
+    '    at IncomingMessage.emit (node:domain:488:12)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)',
+  statusCode: 500,
+  url: '/api/todos/15/status',
+  level: 'error',
+  timestamp: '2024-12-16T13:06:42.510Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/error',
+  level: 'error',
+  timestamp: '2024-12-27T10:33:04.175Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/error',
+  level: 'error',
+  timestamp: '2024-12-27T10:33:10.811Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:117:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/15',
+  level: 'error',
+  timestamp: '2024-12-27T10:33:15.425Z'
+}
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:147:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/15/status',
+  level: 'error',
+  timestamp: '2024-12-27T10:33:24.794Z'
+}
