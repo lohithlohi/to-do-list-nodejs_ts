@@ -133,3 +133,14 @@
   level: 'error',
   timestamp: '2024-12-27T10:33:24.794Z'
 }
+{
+  message: 'Todo not found',
+  stack: 'Error: Todo not found\n' +
+    '    at C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:39:15\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\oth drives\\scripting practice\\node practice\\todo-list-typescript\\src\\routes\\todos.ts:5:58)',
+  statusCode: 404,
+  url: '/api/todos/error',
+  level: 'error',
+  timestamp: '2024-12-30T09:28:22.186Z'
+}
